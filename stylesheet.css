@@ -1,3 +1,62 @@
-.center {
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    min-height: 100vh;
+    background: #333334;
+}
+
+.container
+{
+    position: relative;
+    width 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.stars
+{
+  position: relative;
+  display: flex;  
+}
+
+.stars span
+{
+    position: relative;
+    width 30px
+    height: 30px
+    background: #e4e8ff;
+    margin: 0 4px;
+    border-radius: 50$;
+    box-shadow: 0 0 0 10px #cad8ff,
+    0 0 50px #e4e8ff,
+    0 0 100px #e4e8ff;
+    animation: animate 15s linear infinite;
+}
+.stars span:nth-child(even)
+{
+    box-shadow: 0 0 0 10px #ffebd1,
+    0 0 50px #ffebd1,
+    0 0 100px #ffd7ae;    
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+.Xavier Orasmy {
     text-align: center;
 }
+
