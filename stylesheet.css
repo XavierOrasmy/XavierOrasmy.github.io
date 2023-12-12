@@ -21,8 +21,8 @@ body
 
 .stars
 {
-  position: relative;
-  display: flex;  
+    position: relative;
+    display: flex;  
 }
 
 .stars span
@@ -55,8 +55,5 @@ body
     {
         transform: translateY(-10vh) scale(1);
     }
-}
-.Xavier Orasmy {
-    text-align: center;
 }
 
