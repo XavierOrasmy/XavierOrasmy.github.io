@@ -42,4 +42,5 @@ header{
 }
 .navigation li{
     float: left;
+    list-style: none;
 }
