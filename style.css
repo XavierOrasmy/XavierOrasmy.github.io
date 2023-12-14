@@ -1,46 +1,118 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 body{
-    width: 100%;
-    min-height: 100vh;
-    background: #000000;
-    overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+  background: #000000;
+  overflow-x: hidden;
 }
 header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
 }
+/*My name on the nav bar*/ 
 .name{
-    font-size: 2em;
-    color: #ffffff;
-    pointer-events: none;
+  font-size: 2em;
+  color: #ffffff;
+  pointer-events: none;
 }
+/*Nav bar settings*/ 
 .navigation a{
-    color: #ffffff;
-    text-decoration: none;
-    padding: 6px 15px;
-    border-radius: 20px;
-    margin: 0 10px;
-    font-weight: 600;
-    display: block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 6px 15px;
+  border-radius: 20px;
+  margin: 0 10px;
+  font-weight: 600;
+  display: block;
 }
 .navigation a:hover, 
 .navigation a.active{
-    background-color: #ffffff;
-    color: #000000;
+  background-color: #ffffff;
+  color: #000000;
 }
 .navigation li{
-    float: left;
-    list-style: none;
+  float: left;
+  list-style: none;
+}
+/*My name as the title, and sizing for it*/ 
+.title{
+  color: #ffffff;
+  position: absolute;
+  top: 55%;
+  left: 36%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.title h1{
+  font-size: 90px;
+  margin: 10px 0 30px;
+  line-height: 80px;
+}
+/*About me section*/ 
+.about{
+  color: #ffffff;
+  position: absolute;
+  top: 155%;
+  left: 43%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.about h1{
+  font-size: 90px;
+  margin: 10px 0 30px;
+  line-height: 80px;
+}
+/*Educational information*/
+.education{
+  color: #ffffff;
+  position: absolute;
+  top: 255%;
+  left: 38%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.education h1{
+  font-size: 90px;
+  margin: 10px 0 30px;
+  line-height: 80px;
+}
+/*My experiences with in industy*/ 
+.experience{
+  color: #ffffff;
+  position: absolute;
+  top: 355%;
+  left: 37%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.experience h1{
+  font-size: 90px;
+  margin: 10px 0 30px;
+  line-height: 80px;
+}
+/*Contact information*/
+.contact{
+  color: #ffffff;
+  position: absolute;
+  top: 455%;
+  left: 40%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.contact h1{
+  font-size: 90px;
+  margin: 10px 0 30px;
+  line-height: 80px;
 }
