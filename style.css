@@ -3,6 +3,7 @@
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body{
   width: 100%;
@@ -19,7 +20,7 @@ header{
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  background: #A9A9A9;
+  background: rgba(0, 0, 0, 0.2);;
 }
 /*My name on the nav bar*/ 
 .name{
