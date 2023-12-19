@@ -7,39 +7,39 @@
 }
 body{
   width: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
   background: #000000;
 }
 header{
   top: 0;
   position: sticky;
-  left: 0;
   width: 100%;
-  padding: 30px 100px;
+  padding: 20px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.2);;
+  background: rgba(255, 255, 255, 0.2);;
 }
 /*My name on the nav bar*/ 
 .name{
   font-size: 2em;
   color: #ffffff;
+  text-shadow: #000000;
   pointer-events: none;
 }
 /*Nav bar settings*/ 
 .navigation a{
   color: #ffffff;
+  font-size: 120%;
   text-decoration: none;
-  padding: 6px 15px;
+  padding: 10px 15px;
   border-radius: 20px;
   margin: auto;
   font-weight: 600;
   display: block;
 }
-.navigation a:hover, 
-.navigation a.active{
+.navigation a:hover{
   background-color: #ffffff;
   color: #000000;
 }
@@ -53,7 +53,7 @@ header{
 }
 .title h1{
   font-size: 90px;
-  height: 90vh;
+  height: 100dvh;
   max-width: 700px;
   margin: auto;
   display: flex;
@@ -66,7 +66,7 @@ header{
 }
 .about h1{
   font-size: 90px;
-  height: 90vh;
+  height: 100dvh;
   max-width: 700px;
   font-size: 90px;
   margin: auto;
@@ -88,7 +88,7 @@ header{
 }
 .education h1{
   font-size: 90px;
-  height: 90vh;
+  height: 100dvh;
   max-width: 700px;
   font-size: 90px;
   margin: auto;
@@ -102,7 +102,7 @@ header{
 }
 .experience h1{
   font-size: 90px;
-  height: 90vh;
+  height: 100dvh;
   max-width: 700px;
   font-size: 90px;
   margin: auto;
@@ -116,11 +116,37 @@ header{
 }
 .contact h1{
   font-size: 90px;
-  height: 90vh;
+  height: 100dvh;
   max-width: 700px;
   font-size: 90px;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+/*decorating the background*/
+.nightsky{
+position: absolute;
+width: 100%;
+height: 100%;
+}
+.star{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 4px;
+  width: 100px;
+  background: linear-gradient(-45deg, #ffffff, rgba(0,0,255,0));
+  border-radius: 999px;
+  filter: drop-shadow(0 0 0 6px rgba(192, 191, 126, 0))
+}
+.star::before, star::after{
+  content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  right: 0;
+  height: 4px;
+  width: 30px;
+  background: linear-gradient(-45, rgba(0,0,255,0), #ffffff, rgba(0,0,255,0))
+  transform
 }
